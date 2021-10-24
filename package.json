@@ -1,0 +1,7 @@
+{
+  "name": "infer-next-props-type",
+  "version": "0.0.1",
+  "description": "Gets inferred typings for getStaticProps or getServerSideProps.",
+  "types": "main.d.ts",
+  "license": "MIT"
+}
