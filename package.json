@@ -3,5 +3,14 @@
   "version": "0.0.3",
   "description": "Gets inferred typings for getStaticProps or getServerSideProps.",
   "types": "main.d.ts",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "Next.js",
+    "Typescript",
+    "React.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HaNdTriX/infer-next-props-type"
+  }
 }
