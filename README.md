@@ -1,6 +1,6 @@
 # InferNextPropsType
 
-Gets inferred typings for getStaticProps or getServerSideProps.
+Gets inferred typings for `getStaticProps` or `getServerSideProps`.
 
 ## Install
 
@@ -10,12 +10,10 @@ npm install infer-next-props-type --save-dev
 
 ## Usage
 
-I solved the issue by creating my own infer type:
-
 ### getStaticProps
 
 ```ts
-import InferNextPropsType from './yourPath/InferNextPropsType'
+import InferNextPropsType from 'infer-next-props-type'
 
 export function getStaticProps() {
    return {
@@ -31,7 +29,7 @@ export default function Page(props: InferNextPropsType<typeof getStaticProps>) {
 ### getServerSideProps
 
 ```ts
-import InferNextPropsType from './yourPath/InferNextPropsType'
+import InferNextPropsType from 'infer-next-props-type'
 
 export function getServerSideProps() {
    return {
@@ -43,3 +41,7 @@ export default function Page(props: InferNextPropsType<typeof getServerSideProps
   return ...
 }
 ```
+
+## Related
+
+- https://nextjs.org/docs/basic-features/data-fetching
