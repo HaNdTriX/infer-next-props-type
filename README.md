@@ -1,4 +1,4 @@
-# :no_entry: [DEPRECATED] InferNextPropsType
+# InferNextPropsType
 
 Gets inferred typings for `getStaticProps` or `getServerSideProps`.
 
