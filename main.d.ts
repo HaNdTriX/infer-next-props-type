@@ -1,12 +1,5 @@
-// eslint-disable-next-line no-unused-vars
-type AsyncReturnType<T> = T extends (...args: any[]) => Promise<infer R>
-  ? R
-  : any;
-
-type Filter<T, U> = T extends U ? T : never;
-
-export type InferNextProps<T> = Filter<
-  AsyncReturnType<T>,
+export type InferNextProps<T extends (args: any) => any> = Extract<
+  Awaited<ReturnType<T>>,
   { props: any }
 >["props"];
 
