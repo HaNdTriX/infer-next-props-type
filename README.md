@@ -1,3 +1,5 @@
+:no_entry: **[DEPRECATED]** The issue this package fixes is not needed anymore if you are using [Next.js](https://github.com/vercel/next.js/releases/tag/v12.3.2-canary.0) >= `v12.3.2`. [More Info](https://github.com/vercel/next.js/pull/40635).
+
 # InferNextPropsType
 
 Gets inferred typings for `getStaticProps` or `getServerSideProps`.
