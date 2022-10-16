@@ -99,3 +99,15 @@ async function getServerSidePropsAsyncRedirect(
 expectType<InferNextPropsType<typeof getServerSidePropsAsyncRedirect>>({
   foo: "bar",
 });
+
+async function getServerSidePropsPromised(context: GetServerSidePropsContext) {
+  return {
+    props: new Promise<{ foo: string }>(() => {
+      return { foo: "bar" };
+    }),
+  };
+}
+
+expectType<InferNextPropsType<typeof getServerSidePropsPromised>>({
+  foo: "bar",
+});
